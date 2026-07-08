@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Nexus Capital</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root { --bg: #020617; --text: #f8fafc; --text-muted: #94a3b8; --accent: #38bdf8; --card-bg: rgba(30,41,59,0.3); }
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+body { background: var(--bg); color: var(--text); overflow-x: hidden; }
+nav { padding: 1.5rem 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.05); position: relative; z-index: 10; background: rgba(2,6,23,0.8); backdrop-filter: blur(10px); }
+.logo { font-weight: 700; font-size: 1.5rem; letter-spacing: -0.04em; text-decoration: none; color: var(--text); }
+.nav-links { display: flex; gap: 2rem; align-items: center; }
+.nav-links a { text-decoration: none; color: var(--text); font-weight: 500; font-size: 0.95rem; transition: color 0.2s; }
+.nav-links a:hover { color: var(--accent); }
+.page-header { padding: 8rem 5% 4rem; text-align: center; position: relative; }
+.page-header h1 { font-size: 4rem; font-weight: 700; letter-spacing: -0.05em; margin-bottom: 1.5rem; background: linear-gradient(to bottom right, #fff, #94a3b8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.page-header p { font-size: 1.25rem; color: var(--text-muted); max-width: 600px; margin: 0 auto; line-height: 1.6; }
+.contact-container { max-width: 600px; margin: 0 auto 8rem; background: var(--card-bg); padding: 3rem; border-radius: 24px; border: 1px solid rgba(255,255,255,0.05); backdrop-filter: blur(10px); }
+.form-group { margin-bottom: 1.5rem; }
+.form-group label { display: block; margin-bottom: 0.5rem; font-weight: 500; font-size: 0.95rem; color: var(--text-muted); }
+.form-control { width: 100%; padding: 1rem; border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; font-size: 1rem; font-family: inherit; background: rgba(0,0,0,0.2); color: white; transition: all 0.2s; }
+.form-control:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px rgba(56,189,248,0.1); }
+textarea.form-control { resize: vertical; min-height: 150px; }
+.btn { padding: 1rem 2rem; background: var(--text); color: var(--bg); border: none; border-radius: 12px; font-weight: 600; font-size: 1rem; cursor: pointer; transition: transform 0.2s; width: 100%; }
+.btn:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(255,255,255,0.1); }
+</style>
+</head>
+<body>
+<nav>
+    <a href="index.html" class="logo">NEXUS.</a>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div style="font-weight:500; cursor:pointer;"><a href="contact.html" style="color:var(--text); text-decoration:none;">Login</a></div>
+</nav>
+
+<div class="page-header">
+    <h1>Contact.</h1>
+    <p>口座開設のご相談やサービスに関するお問い合わせはこちらから。</p>
+</div>
+
+<div class="contact-container">
+    <form onsubmit="event.preventDefault(); alert('Message Sent. (Demo)');">
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" class="form-control" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+</div>
+</body>
+</html>

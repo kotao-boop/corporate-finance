@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services | Nexus Capital</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root { --bg: #020617; --text: #f8fafc; --text-muted: #94a3b8; --accent: #38bdf8; --card-bg: rgba(30,41,59,0.3); }
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+body { background: var(--bg); color: var(--text); overflow-x: hidden; }
+nav { padding: 1.5rem 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.05); position: relative; z-index: 10; background: rgba(2,6,23,0.8); backdrop-filter: blur(10px); }
+.logo { font-weight: 700; font-size: 1.5rem; letter-spacing: -0.04em; text-decoration: none; color: var(--text); }
+.nav-links { display: flex; gap: 2rem; align-items: center; }
+.nav-links a { text-decoration: none; color: var(--text); font-weight: 500; font-size: 0.95rem; transition: color 0.2s; }
+.nav-links a:hover { color: var(--accent); }
+.page-header { padding: 8rem 5% 4rem; text-align: center; position: relative; }
+.page-header h1 { font-size: 4rem; font-weight: 700; letter-spacing: -0.05em; margin-bottom: 1.5rem; background: linear-gradient(to bottom right, #fff, #94a3b8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.page-header p { font-size: 1.25rem; color: var(--text-muted); max-width: 600px; margin: 0 auto; line-height: 1.6; }
+.services-container { max-width: 1200px; margin: 0 auto; padding: 0 5% 8rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+.service-card { background: var(--card-bg); border: 1px solid rgba(255,255,255,0.05); padding: 3rem; border-radius: 24px; transition: transform 0.3s ease, border-color 0.3s ease; }
+.service-card:hover { transform: translateY(-10px); border-color: rgba(56,189,248,0.3); }
+.service-card h2 { font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; color: var(--text); }
+.service-card p { color: var(--text-muted); line-height: 1.6; font-size: 1rem; margin-bottom: 2rem; }
+.service-link { color: var(--accent); text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 0.5rem; }
+.service-link:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<nav>
+    <a href="index.html" class="logo">NEXUS.</a>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div style="font-weight:500; cursor:pointer;"><a href="contact.html" style="color:var(--text); text-decoration:none;">Login</a></div>
+</nav>
+
+<div class="page-header">
+    <h1>Our Services.</h1>
+    <p>機関投資家および個人富裕層向けに、最先端の金融ソリューションを提供します。</p>
+</div>
+
+<div class="services-container">
+    <div class="service-card">
+        <h2>Quantitative Trading</h2>
+        <p>独自のAIアルゴリズムによる高速なクオンツ取引。膨大な市場データをミリ秒単位で解析し、リスクを最小限に抑えながらリターンを最大化します。</p>
+        <a href="#" class="service-link">Learn More &rarr;</a>
+    </div>
+    <div class="service-card">
+        <h2>Wealth Management</h2>
+        <p>お客様一人ひとりのリスク許容度と目標に合わせた、パーソナライズされた資産管理。専門のコンサルタントとAIが最適なポートフォリオを提案します。</p>
+        <a href="#" class="service-link">Learn More &rarr;</a>
+    </div>
+    <div class="service-card">
+        <h2>Corporate Advisory</h2>
+        <p>M&A、資金調達、リスク管理など、企業の持続的な成長を支援する戦略的アドバイザリーサービス。グローバルなネットワークを活用します。</p>
+        <a href="#" class="service-link">Learn More &rarr;</a>
+    </div>
+</div>
+</body>
+</html>

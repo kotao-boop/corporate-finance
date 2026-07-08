@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Nexus Capital</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root { --bg: #020617; --text: #f8fafc; --text-muted: #94a3b8; --accent: #38bdf8; }
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+body { background: var(--bg); color: var(--text); overflow-x: hidden; }
+nav { padding: 1.5rem 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.05); position: relative; z-index: 10; background: rgba(2,6,23,0.8); backdrop-filter: blur(10px); }
+.logo { font-weight: 700; font-size: 1.5rem; letter-spacing: -0.04em; text-decoration: none; color: var(--text); }
+.nav-links { display: flex; gap: 2rem; align-items: center; }
+.nav-links a { text-decoration: none; color: var(--text); font-weight: 500; font-size: 0.95rem; transition: color 0.2s; }
+.nav-links a:hover { color: var(--accent); }
+.page-header { padding: 8rem 5% 4rem; text-align: center; position: relative; }
+.page-header h1 { font-size: 4rem; font-weight: 700; letter-spacing: -0.05em; margin-bottom: 1.5rem; background: linear-gradient(to bottom right, #fff, #94a3b8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.page-header p { font-size: 1.25rem; color: var(--text-muted); max-width: 600px; margin: 0 auto; line-height: 1.6; }
+.content-wrapper { max-width: 1000px; margin: 0 auto; padding: 4rem 5% 8rem; }
+.info-block { display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; padding: 4rem 0; border-top: 1px solid rgba(255,255,255,0.05); }
+.info-block h2 { font-size: 1.5rem; font-weight: 600; color: var(--accent); }
+.info-block p { font-size: 1.125rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 1.5rem; }
+table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+th, td { padding: 1.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); text-align: left; }
+th { font-weight: 600; color: var(--text); width: 30%; }
+td { color: var(--text-muted); }
+</style>
+</head>
+<body>
+<nav>
+    <a href="index.html" class="logo">NEXUS.</a>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div style="font-weight:500; cursor:pointer;"><a href="contact.html" style="color:var(--text); text-decoration:none;">Login</a></div>
+</nav>
+
+<div class="page-header">
+    <h1>Our Philosophy.</h1>
+    <p>市場の不確実性を、データの力で確実な未来へと変換する。</p>
+</div>
+
+<div class="content-wrapper">
+    <div class="info-block">
+        <h2>Vision</h2>
+        <div>
+            <p>Nexus Capitalは、世界中の投資家に対して、最も高度なアルゴリズムと深い洞察に基づいた投資戦略を提供します。</p>
+            <p>テクノロジーが進化する中、私たちは常に革新の最前線に立ち、透明性と信頼性をもってお客様の資産を保護・成長させることを使命としています。</p>
+        </div>
+    </div>
+    <div class="info-block">
+        <h2>Corporate Data</h2>
+        <div>
+            <table>
+                <tr><th>Company Name</th><td>Nexus Capital Group</td></tr>
+                <tr><th>Founded</th><td>2015</td></tr>
+                <tr><th>CEO</th><td>Alexander Sterling</td></tr>
+                <tr><th>Headquarters</th><td>Wall Street, New York, NY</td></tr>
+                <tr><th>AUM</th><td>$120 Billion+</td></tr>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
